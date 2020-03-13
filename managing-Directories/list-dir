@@ -1,0 +1,8 @@
+from pathlib import Path
+
+path = Path(sys.argv[1])
+
+glob_path = path.glob('*')
+
+for file_path in glob_path:
+    print(file_path)
